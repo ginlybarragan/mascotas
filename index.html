@@ -1,0 +1,271 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Titulo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+	<link rel="stylesheet" href="css/themes/mypet.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    
+</head>
+
+<body>
+
+<!-- Inicio de página -->
+<div data-role="page" id="configuraciones">
+	<div data-role="header" data-position="fixed">
+    	<h1><img src="imagenes/logoo.png" class="logoHeader"> My Pet</h1>
+    </div>
+	<div role="main" class="ui-content">
+        Contenido
+    </div>
+	<div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+            <ul>
+                <li><a href="#carnet" class="ui-btn ui-icon-gear ui-btn-icon-top">Configuraciones</a></li>
+                <li><a href="#can" class="ui-btn ui-icon-heart ui-btn-icon-top">CAN</a></li>
+                <li><a href="#galeria" class="ui-btn ui-icon-grid ui-btn-icon-top">Galería</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+</div>
+<!-- Final de página -->
+
+
+<!-- Inicio de página -->
+<div data-role="page" id="carnet">
+	<div data-role="header" data-position="fixed">
+    	<h1><img src="imagenes/logoo.png" class="logoHeader"> My Pet</h1>
+    </div>
+	<div role="main" class="ui-content">
+        <label for="text-basic">Nombre de tu amigo:</label>
+        <input name="text-basic" id="text-basic" value="" type="text">
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+        	<input name="radio-choice-b" id="radio-choice-c" value="list" checked="checked" type="radio">
+            <label for="radio-choice-c">Macho</label>
+            <input name="radio-choice-b" id="radio-choice-d" value="grid" type="radio">
+            <label for="radio-choice-d">Hembra</label>
+         </fieldset>
+         <label for="slider">Edad:</label>
+         <input name="slider" id="slider" value="10" min="1" max="20" type="range">
+         
+         
+         <ul data-role="listview" data-inset="true">
+             <li><a href="#">
+                 <img src="imagenes/Labrador Retriever Colors.jpg">
+                 <h2>Labrador retriever</h2>
+                 <p>una raza canina originaria de Terranova, en la actual Canadá.</p></a>
+             </li>
+             <li><a href="#">
+                 <img src="imagenes/chow-_chow.jpg">
+                 <h2>Chow Chow</h2>
+                 <p>El Chow Chow o sencillamente Chow8 es una raza canina originaria del Norte de China</p></a>
+             </li>
+             <li><a href="#">
+                 <img src="imagenes/siberian huskies dogs.jpg">
+                 <h2> husky siberiano</h2>
+                 <p>El husky siberiano es una raza de perro de trabajo originaria del noreste de Siberia (Chukotka, Rusia)</p></a>
+             </li>
+         </ul>
+         
+         
+         
+         <a href="#can" class="ui-btn ui-icon-check ui-btn-icon-right">Aceptar</a>
+    </div>
+	<div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+            <ul>
+                <li><a href="#carnet" class="ui-btn ui-icon-gear ui-btn-icon-top ui-btn-active">Configuraciones</a></li>
+                <li><a href="#can" class="ui-btn ui-icon-heart ui-btn-icon-top">CAN</a></li>
+                <li><a href="#galeria" class="ui-btn ui-icon-grid ui-btn-icon-top">Galería</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+</div>
+<!-- Final de página -->
+
+
+<!-- Inicio de página -->
+<div data-role="page" id="can">
+	<div data-role="header" data-position="fixed">
+    	<h1><img src="imagenes/logoo.png" class="logoHeader"> My Pet</h1>
+    </div>
+	<div role="main" class="ui-content">
+        
+        <ul data-role="listview" data-inset="true">
+    <li><a href="#vacunas"><img src="imagenes/iconvacunas.png" alt="vacunas">vacunas</a></li>
+    <li><a href="#despa"><img src="imagenes/icondesparacitasion.png"  alt="despa">desparacitación</a></li>
+    <li><a href="#baño"><img  src="imagenes/iconducha.png" alt="baño">baño</a></li>
+      </ul>
+
+    </div>
+	<div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+            <ul>
+                <li><a href="#carnet" class="ui-btn ui-icon-gear ui-btn-icon-top">Configuraciones</a></li>
+                <li><a href="#can" class="ui-btn ui-icon-heart ui-btn-icon-top ui-btn-active">CAN</a></li>
+                <li><a href="#galeria" class="ui-btn ui-icon-grid ui-btn-icon-top">Galería</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+</div>
+<!-- Final de página -->
+
+
+<!-- Inicio de página -->
+<div data-role="page" id="vacunas">
+	<div data-role="header" data-position="fixed">
+    	<h1><img src="imagenes/logoo.png" class="logoHeader"> My Pet</h1>
+    </div>
+	<div role="main" class="ui-content">
+        
+        <ul data-role="listview" data-inset="true">
+    <li><a href="#moco"> moquillo</a></li>
+    <li><a href="#">Rabia</a></li>
+    <li><a href="#">  herpesvirus canino</a></li>
+    <li><a href="#">  piroplasmosis</a></li>
+     <li><a href="#">  parvovirosis</a></li>
+      </ul>
+
+    </div>
+	<div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+            <ul>
+                <li><a href="#carnet" class="ui-btn ui-icon-gear ui-btn-icon-top">Configuraciones</a></li>
+                <li><a href="#can" class="ui-btn ui-icon-heart ui-btn-icon-top ui-btn-active">CAN</a></li>
+                <li><a href="#galeria" class="ui-btn ui-icon-grid ui-btn-icon-top">Galería</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+</div>
+<!-- Final de página -->
+
+
+<!-- Inicio de página -->
+<div data-role="page" id="moco">
+	<div data-role="header" data-position="fixed">
+    	<h1><img src="imagenes/logoo.png" class="logoHeader"> My Pet</h1>
+    </div>
+	<div role="main" class="ui-content">
+    
+    <form>
+     <label for="date-1">última vacuna</label>
+     <input type="date" data-clear-btn="false" name="date-1" id="date-1" value="">
+     <label for="date-2">proxima vacuna</label>
+     <input type="date" data-clear-btn="true" name="date-2" id="date-2" value="">
+</form>
+      
+      <a href="#can" class="ui-btn ui-icon-check ui-btn-icon-right"">Aceptar</a>
+      
+    </div>
+	<div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+            <ul>
+                <li><a href="#carnet" class="ui-btn ui-icon-gear ui-btn-icon-top">Configuraciones</a></li>
+                <li><a href="#can" class="ui-btn ui-icon-heart ui-btn-icon-top ui-btn-active">CAN</a></li>
+                <li><a href="#galeria" class="ui-btn ui-icon-grid ui-btn-icon-top">Galería</a></li>
+            </ul>
+            
+             
+        </div><!-- /navbar -->
+    </div>
+</div>
+<!-- Final de página -->
+
+
+<!-- Inicio de página -->
+<div data-role="page" id="despa">
+	<div data-role="header" data-position="fixed">
+    	<h1><img src="imagenes/logoo.png" class="logoHeader"> My Pet</h1>
+    </div>
+	<div role="main" class="ui-content">
+    
+    <form>
+     <label for="date-1">última desparacitación</label>
+     <input type="date" data-clear-btn="false" name="date-1" id="date-1" value="">
+     <label for="date-2">proxima desparacitación</label>
+     <input type="date" data-clear-btn="true" name="date-2" id="date-2" value="">
+</form>
+      
+      <a href="#can" class="ui-btn ui-icon-check ui-btn-icon-right"">Aceptar</a>
+      
+    </div>
+	<div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+            <ul>
+                <li><a href="#carnet" class="ui-btn ui-icon-gear ui-btn-icon-top">Configuraciones</a></li>
+                <li><a href="#can" class="ui-btn ui-icon-heart ui-btn-icon-top ui-btn-active">CAN</a></li>
+                <li><a href="#galeria" class="ui-btn ui-icon-grid ui-btn-icon-top">Galería</a></li>
+            </ul>
+            
+             
+        </div><!-- /navbar -->
+    </div>
+</div>
+<!-- Final de página -->
+
+
+<!-- Inicio de página -->
+<div data-role="page" id="baño">
+	<div data-role="header" data-position="fixed">
+    	<h1><img src="imagenes/logoo.png" class="logoHeader"> My Pet</h1>
+    </div>
+	<div role="main" class="ui-content">
+    
+    <form>
+     <label for="date-1">último baño</label>
+     <input type="date" data-clear-btn="false" name="date-1" id="date-1" value="">
+     <label for="date-2">proximo baño</label>
+     <input type="date" data-clear-btn="true" name="date-2" id="date-2" value="">
+</form>
+      
+      <a href="#can" class="ui-btn ui-icon-check ui-btn-icon-right"">Aceptar</a>
+      
+    </div>
+	<div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+            <ul>
+                <li><a href="#carnet" class="ui-btn ui-icon-gear ui-btn-icon-top">Configuraciones</a></li>
+                <li><a href="#can" class="ui-btn ui-icon-heart ui-btn-icon-top ui-btn-active">CAN</a></li>
+                <li><a href="#galeria" class="ui-btn ui-icon-grid ui-btn-icon-top">Galería</a></li>
+            </ul>
+            
+             
+        </div><!-- /navbar -->
+    </div>
+</div>
+<!-- Final de página -->
+
+<!-- Inicio de página -->
+<div data-role="page" id="galeria">
+	<div data-role="header" data-position="fixed">
+    	<h1><img src="imagenes/logoo.png" class="logoHeader"> My Pet</h1>
+    </div>
+	<div role="main" class="ui-content">
+    
+</div> 
+  
+ 
+  </div>
+	<div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+            <ul>
+                <li><a href="#carnet" class="ui-btn ui-icon-gear ui-btn-icon-top">Configuraciones</a></li>
+                <li><a href="#can" class="ui-btn ui-icon-heart ui-btn-icon-top ui-btn-active">CAN</a></li>
+                <li><a href="#galeria" class="ui-btn ui-icon-grid ui-btn-icon-top">galería</a></li>
+            </ul>
+            
+             
+        </div><!-- /navbar -->
+    </div>
+</div>
+<!-- Final de página -->
+
+</body>
+</html>
